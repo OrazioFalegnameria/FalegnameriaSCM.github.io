@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Utensili FalegnameriaSCR</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>  
+    <nav class="navbar navbar-default index-navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Titolo e bottone di toggle sono raggruppati insieme per la visualizzazione su mobile -->
+        <div class="navbar-header" id="indexNavbarHeader">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><strong>FalegnameriaSCR</strong></a>
+        </div>
+
+        <!-- Link, form e altri elementi da far scomparire su mobile -->
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="info.html">Info</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <h1>Utensili</h1>
+    <br>
+    <br>
+    <ul class="nav nav-pills">
+      <li role="presentation"><a href="index.html">Macchinari</a></li>
+      <li role="presentation" class="active"><a href="index2.html">Utensili</a></li>
+      <li class="active">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+        </a>
+        <ul class="dropdown-menu" id="DropDown">
+          <!-- Dropdown menu links -->
+        </ul>
+      </li>
+      <li role="presentation"><a href="index3.html">Veicoli</a></li>
+      <li role="presentation"><a href="index4.html">Locali</a></li>
+    </ul>
+    <br>
+    <div class="search row">
+      <input type="text" placeholder="Cerca in questa sezione..." name="search" id="Cerca">
+      <button type="button" onclick="myResearch()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+    </div>
+    <br>
+
+    <div id="loaderRicerca"></div>
+    <table class="table" id="Tabella"></table>
+
+    <div id="Modali"></div>
+
+    <!-- Initialize Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="script2.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

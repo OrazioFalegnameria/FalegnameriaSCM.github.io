@@ -1,0 +1,209 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+  background: #B5FF42;
+}
+
+.navbar-brand strong {
+  font-family: "Russo One", sans-serif;
+  font-size: 40px;
+  color:#ffa400;
+  text-shadow: -2px 2px #336946, 2px 2px #336946, -2px -2px #336946, 2px -2px #336946;
+}
+
+.index-navbar{
+  background: #56B24D;
+}
+
+h1 {
+  padding-top: 70px;
+  font-family: "Russo One", sans-serif;
+  font-size: 100px;
+  text-shadow: -9px 9px 0px #59e44c,
+    -18px 18px 0px #56B24D,
+    -27px 27px 0px #336946;
+  text-align: center;
+}
+
+.nav-pills{
+  margin: 0 auto;
+  max-width: 440px;
+}
+
+.nav-pills a{
+  height: 45px;
+}
+
+.nav-pills .dropdown-toggle{
+  width: 10px;
+}
+.nav-pills .dropdown-toggle span{
+  transform: translate(-6.5px,0px)
+}
+
+.nav-pills ul li{
+  height:30px;
+}
+
+.nav-pills ul li a:hover{
+  height:30px;
+}
+
+#testoCerca{
+  padding-top: 18px;
+  text-align: center;
+}
+
+div.search{
+  margin: 0 auto;
+  max-width:500px; 
+}
+
+div.search input[type=text] {
+  padding: 10px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  max-width: 400px;
+  height: 50px;
+  background: #f1f1f1;
+  border-radius: 8px 0px 0px 8px;
+}
+
+div.search button {
+  float: left;
+  width: 20%;
+  max-width: 100px;
+  height: 50px;
+  padding: 15px 10px 10px 10px;
+  background: #ffbd46;
+  color: white;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0px 8px 8px 0px;
+}
+div.search button:hover {
+  background: #ffa400;
+}
+
+#loaderRicerca {
+  display: none;
+  margin-top: 20px;
+  margin-right: auto; 
+  margin-left: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #336946;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+#loaderModali {
+  display: none;
+  margin-top: 20px;
+  margin-right: auto; 
+  margin-left: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #336946;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+table{
+  margin: 0 auto;
+}
+
+table tr{
+  //background: white;
+}
+
+table tr:hover {
+  background: #78ea31;
+} 
+
+table tr img{
+  width: 100%;
+  align-self: center;
+}
+
+table tr h3{
+  transform: translate(15px, -5px);
+}
+
+table tr a{
+  color: #444;
+}
+
+table tr a:hover{
+  color: #444;
+}
+
+table tr p{
+  text-align:justify;
+}
+
+.modal img{
+  width: 100%;
+}
+
+.modal .carousel-inner .carousel-caption button{
+  background:transparent;
+  border-color: transparent;
+  transform: translate(200%,0px)
+}
+
+.modal .carousel-inner .carousel-caption button:hover{
+  background:#56B24D;
+  border-color: transparent;
+}
+
+.modal .carousel-caption button img{
+  width: 30px;
+}
+
+.jumbotron{
+  background: white;
+  border-radius: 8px 8px 8px 8px;
+  min-height: 500px;
+}
+
+.tab-pane .row input{
+  width: 60%;
+  transform: translate(30px,10px);
+}
+
+.tab-pane .row textarea{
+  width: 60%;
+  max-width: 90%;
+  transform: translate(30px,20px);
+}
+
+#Invia{
+  width: 50%;
+  max-width: 300px;
+  transform: translate(30px,30px);
+}
